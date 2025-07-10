@@ -2,7 +2,6 @@
 
 import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
-import { BsPersonWorkspace } from "react-icons/bs";
 import GlowCard from "../../helper/glow-card";
 
 function Experience() {
@@ -29,7 +28,7 @@ function Experience() {
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
-            <img
+            <Image
                 src="/code.gif"
                 alt="Educational Animation"
                 style={{ width: "90%", }}
