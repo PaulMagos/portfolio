@@ -1,19 +1,28 @@
-"use client"
+"use client"; // Mark this file as client component
 
+import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 
 const AnimationLottie = ({ animationPath, width }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationPath,
-    style: {
-      width: '95%',
-    }
-  };
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    // SSR: render fallback placeholder (can be null or static image)
+    return <div style={{ width: width || "95%", height: 200, backgroundColor: "#eee" }}>Loading animation...</div>;
+  }
+
+  // Client-only render of Lottie animation
   return (
-    <Lottie {...defaultOptions} />
+    <Lottie
+      animationData={animationPath}
+      loop={true}
+      autoplay={true}
+      style={{ width: width || "95%" }}
+    />
   );
 };
 

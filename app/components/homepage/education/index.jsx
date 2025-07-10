@@ -2,8 +2,6 @@
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import lottieFile from '../../../assets/lottie/study.json';
-import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 
 function Education() {
@@ -34,10 +32,12 @@ function Education() {
 
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
-            <div className="w-3/4 h-3/4">
-              <AnimationLottie animationPath={lottieFile} />
-            </div>
+          <div className="flex justify-center mt-10 items-start">
+              <img
+                src="/edu.gif"
+                alt="Educational Animation"
+                style={{ width: "80%", height: "300" }}
+              />
           </div>
 
           <div>
@@ -59,8 +59,13 @@ function Education() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
+                        <div className="text-violet-500 transition-all duration-300 hover:scale-125">
+                          <Image
+                            src={education.image}
+                            alt={education.institution}
+                            width={100}
+                            height={100}
+                          />
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium">
