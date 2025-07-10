@@ -1,20 +1,26 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: 'Software & Artificial Intelligence Engineer',
+    image: "",
+    company: "ION Trading Srl, Pisa, Italy",
+    description: "Working on the backend of a financial product, making software architecture decisions and feature development in Java. Additionally, 20% of the time is allocated to a research project exploring applications of artificial intelligence in financial systems.",
+    duration: "(Feb 2025 - Present)"
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: "Freelance Software Engineer",
+    image: "",
+    company: "PRIMIS Srl, Italy",
+    description: "Developed a smart routing logistics program to optimize delivery routes based on a set of orders. The system minimized both total distance and travel time using route optimization algorithms.",
+    duration: "(Aug 2022 - Nov 2022)"
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: "Research Fellow",
+    image: "https://store.unipi.it/wp-content/uploads/2022/07/marchio_unipi_white-1024x546.png",
+    company: "University of Pisa",
+    description: "Research Fellowship under the supervision of Prof. Alina Sîrbu, focused on Post, formerly Tweets, retrieval for text sentiment analysis, image tagging, video transcription, and subsequent analysis.",
+    duration: "(Jan 2024 - Jun 2024)"
   }
 ]
