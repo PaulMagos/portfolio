@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { FaCode, FaPlay } from 'react-icons/fa';
-import placeholder from '/public/png/placeholder.png';
+import { FaPlay } from 'react-icons/fa';
 
 const SingleArticle = ({ article }) => {
   const { name, authors, abstract, tags, link } = article;

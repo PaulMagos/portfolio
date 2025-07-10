@@ -30,9 +30,10 @@ function Experience() {
           <div className="flex justify-center items-start">
             <Image
                 src="/code.gif"
-                alt="Educational Animation"
+                alt="Experience Animation"
                 width="500"
                 height="400"
+                unoptimized
             />
           </div>
 

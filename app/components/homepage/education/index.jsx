@@ -37,6 +37,7 @@ function Education() {
                 alt="Educational Animation"
                 width="500"
                 height="400"
+                unoptimized
               />
           </div>
 
