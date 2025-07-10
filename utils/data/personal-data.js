@@ -8,5 +8,5 @@ export const personalData = {
   address: 'Pisa, Italy ',
   github: 'https://github.com/PaulMagos',
   linkedIn: 'https://www.linkedin.com/in/paulmagos/',
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "/Paul Magos - Curriculum.pdf"
 }
