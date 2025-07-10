@@ -35,7 +35,8 @@ function Education() {
               <Image
                 src="/edu.gif"
                 alt="Educational Animation"
-                style={{ width: "80%", height: "300" }}
+                width="500"
+                height="400"
               />
           </div>
 

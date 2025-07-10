@@ -31,7 +31,8 @@ function Experience() {
             <Image
                 src="/code.gif"
                 alt="Educational Animation"
-                style={{ width: "90%", }}
+                width="500"
+                height="400"
             />
           </div>
 
