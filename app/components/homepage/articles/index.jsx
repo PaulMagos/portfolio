@@ -35,7 +35,7 @@ const Articles = () => {
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
-              className="sticky-card w-full mx-auto max-w-4xl sticky"
+              className="sticky-card w-full mx-auto max-w-6xl sticky"
             >
               <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
                 <ArticlesCard article={article} />

@@ -9,7 +9,8 @@ export const articlesData = [
         journal: 'Springer\'s Journal of Computational Social Science',
         year: 2024,
         doi: '10.1007/s42001-024-00277-4',
-        url: "https://doi.org/10.1007/s42001-024-00277-4"
+        url: "https://doi.org/10.1007/s42001-024-00277-4",
+        pdfUrl: "https://link.springer.com/content/pdf/10.1007/s42001-024-00277-4.pdf"
     }, 
 ];
 
