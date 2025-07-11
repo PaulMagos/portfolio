@@ -26,9 +26,9 @@ function ArticleCard({ article }) {
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8 flex flex-col gap-6">
 
         {/* Row 1: Thumbnail + BibTeX */}
-        <div className="flex flex-row lg:flex-row w-full gap-6">
+        <div className="flex flex-col lg:flex-row w-full gap-6">
           {/* Thumbnail */}
-          <div className="w-full w-1/4 flex justify-center items-start pt-2">
+          <div className="w-full w-1/4 lg:w-1/5 flex justify-center items-start pt-2">
             <Link href={article.pdfUrl} target="_blank">
               <Image
                 src={`/papers/${article.citation}.${article.thumbnailFormat}`}
@@ -40,8 +40,8 @@ function ArticleCard({ article }) {
           </div>
 
           {/* BibTeX */}
-          <div className="overflow-auto border-indigo-900 pr-2 w-full">
-            <code className="font-mono text-xs md:text-sm lg:text-base">
+          <div className="overflow-auto border-indigo-900 pr-2">
+            <code className="font-mono w-3/4 text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-500">@{article.type}{'{'}</span>
               </div>
