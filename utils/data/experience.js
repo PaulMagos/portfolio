@@ -2,7 +2,7 @@ export const experiences = [
   {
     id: 1,
     title: 'Software & Artificial Intelligence Engineer',
-    image: "/ION.svg",
+    image: "/ION.png",
     company: "ION Trading Srl, Pisa, Italy",
     description: "Working on the backend of a financial product, making software architecture decisions and feature development in Java. Additionally, 20% of the time is allocated to a research project exploring applications of artificial intelligence in financial systems.",
     duration: "(Feb 2025 - Present)"

@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: rgb(211, 216, 232);
+  /* Palette 1 - Tech Blue Gradient */
+  --color-lightest: #D4F0FC;   /* very light blue */
+  --color-light: #89D6FB;      /* sky blue */
+  --color-bright: #02A9F7;     /* bright blue */
+  --color-dark: #02577A;       /* dark teal blue */
+  --color-darker: #01303F;     /* navy dark */
+
+  --foreground-rgb: 211, 216, 232; /* light greyish blue */
+  --background-color: #0d1224;     /* your existing dark background */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +22,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+  background-color: var(--background-color);
 }
 
 #sticky-card-1 {
@@ -34,6 +42,6 @@ body {
 }
 
 .sticky-card {
-  // padding-top: calc(var(--index) * 2.5rem);
+  /* padding-top: calc(var(--index) * 2.5rem); */
   top: calc(var(--index) * 4rem);
 }

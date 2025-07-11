@@ -36,13 +36,18 @@ function ArticleCard({ article }) {
   const pdfPath = `/papers/${article.citation}.pdf`;
   const scale = useResponsiveScale(); 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 w-full rounded-lg border border-[#1b2c68a0] bg-gradient-to-r from-[#0d1224] to-[#0a0d37] p-4">
-      
+    <div className="flex flex-col lg:flex-row gap-4 w-full rounded-lg border border-[#1b2c68a0] bg-gradient-to-r from-[#001f2e] to-[#002b46] p-4">
+      <div className="flex flex-row">
+        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
+        <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
+      </div>
+      <div className="w-full lg:w-1/2 overflow-auto border-indigo-900 pr-4">
       {/* Left side: BibTeX */}
-      <div className="w-full lg:w-1/2 overflow-auto border-r border-indigo-900 pr-4">
-        <p className="text-center text-[#16f2b3] text-base lg:text-xl mb-4">
-          {article.name}
-        </p>
+        <div className="py-3 lg:py-5 relative mb-2 border-b-[2px] border-indigo-900 pb-4">
+          <p className="text-center text-[#16f2b3] text-base lg:text-xl">
+            {article.name}
+          </p>
+        </div>
         <code className="font-mono text-xs md:text-sm lg:text-base">
           <div className="blink">
             <span className="mr-2 text-pink-500">@{article.type}{'{'}</span>
