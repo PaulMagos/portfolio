@@ -25,9 +25,8 @@ function Experience() {
         </div>
       </div>
 
-      <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center items-start">
+        <div className="lg:flex lg:flex-row gap-8 lg:gap-16">
+          <div className="lg:w-1/4 flex justify-center items-start">
             <Image
                 src="/code.gif"
                 alt="Experience Animation"
@@ -37,8 +36,7 @@ function Experience() {
             />
           </div>
 
-          <div>
-            <div className="flex flex-col gap-6">
+            <div className="lg:w-3/4 flex flex-col gap-6">
               {
                 experiences.map(experience => (
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
@@ -80,9 +78,7 @@ function Experience() {
                   </GlowCard>
                 ))
               }
-            </div>
           </div>
-        </div>
       </div>
     </div>
   );

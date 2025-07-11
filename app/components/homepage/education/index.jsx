@@ -29,9 +29,8 @@ function Education() {
         </div>
       </div>
 
-      <div className="py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="flex justify-center mt-10 items-start">
+        <div className="lg:flex lg:flex-row gap-8 lg:gap-16">
+          <div className="flex lg:w-1/4 justify-center mt-10 items-start">
               <Image
                 src="/edu.gif"
                 alt="Educational Animation"
@@ -41,8 +40,7 @@ function Education() {
               />
           </div>
 
-          <div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col lg:w-3/4 gap-6">
               {
                 educations.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
@@ -80,8 +78,6 @@ function Education() {
                 ))
               }
             </div>
-          </div>
-        </div>
       </div>
     </div>
   );
