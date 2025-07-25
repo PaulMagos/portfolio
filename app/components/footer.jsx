@@ -14,6 +14,9 @@ function Footer() {
           <p className="text-sm">
             © Template by <Link target="_blank" href="https://github.com/said7388">Abu Said</Link>
           </p>
+           <p className="text-sm">
+            <Link target="_blank" href="https://icons8.com/icon/6644/question-mark">Question Mark by icon8</Link>
+          </p>
         </div>
       </div>
     </div >
